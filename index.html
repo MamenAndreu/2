@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Tu factura de luz te está robando a escondidas?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        ul li {
+            margin: 15px 0;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.2em;
+        }
+        ul li:before {
+            content: "\2714";
+            color: #0066cc;
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+        }
+        form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, button {
+            padding: 15px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .social-proof {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #f1f1f1;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¿Tu factura de luz te está robando a escondidas?</h1>
+    </header>
+
+    <section>
+        <h2>Ahorrar nunca fue tan fácil</h2>
+        <p>A nadie le gusta pagar de más, pero eso es justo lo que haces cada mes si no has revisado tus tarifas. Vamos a arreglarlo juntos.</p>
+
+        <ul>
+            <li>Descubre cuánto puedes ahorrar con un análisis gratuito.</li>
+            <li>Nada de papeleos ni líos: nosotros nos encargamos de todo.</li>
+            <li>Empieza a ahorrar desde tu próxima factura.</li>
+        </ul>
+
+        <p>¿Cuánto estás regalando este mes a tu compañía eléctrica? <br>
+        Sí, lo he dicho bien: regalando. Porque la mayoría de las tarifas actuales son un despropósito.</p>
+
+        <p>Solo necesito una cosa: tu última factura. <br>
+        Con eso te diré exactamente cuánto podrías ahorrar cada mes. Sin tecnicismos, sin compromiso y sin preguntas incómodas.</p>
+
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <input type="file" name="factura" accept=".pdf,.jpg,.png">
+            <button type="submit">¡Quiero saber cuánto puedo ahorrar ya!</button>
+        </form>
+
+        <div class="social-proof">
+            <p>Ya hemos ayudado a más de 1.200 hogares a ahorrar hasta 600 € al año.<br>
+            ¿Quieres ser el próximo?</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tu Empresa Energética. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
